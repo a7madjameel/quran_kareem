@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quran/constant.dart';
+import 'package:quran/utilities/constant.dart';
 
-import 'index.dart';
+import 'screens/index.dart';
 
 void main() {
   runApp(const MyApp());

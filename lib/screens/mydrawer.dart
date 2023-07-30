@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quran/settings.dart';
+import 'package:quran/screens/settings.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:url_launcher/url_launcher.dart';
-
-import 'constant.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({
@@ -54,23 +51,8 @@ class MyDrawer extends StatelessWidget {
               'Share',
             ),
             onTap: () {
-              Share.share('''*Quran app*\n
-u can develop it from my github github.com/itsherifahmed ''');
+              Share.share('*Quran app*');
               Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            leading: const Icon(
-              Icons.rate_review,
-            ),
-            title: const Text(
-              'Rate',
-            ),
-            onTap: () async {
-              if (!await launchUrl(quranAppurl,
-                  mode: LaunchMode.externalApplication)) {
-                throw 'Could not launch $quranAppurl';
-              }
             },
           ),
         ],

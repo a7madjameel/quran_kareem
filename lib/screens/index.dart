@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quran/arabic_sura_number.dart';
+import 'package:quran/screens/arabic_sura_number.dart';
 
-import 'constant.dart';
+import '../utilities/constant.dart';
 import 'mydrawer.dart';
 import 'surah_builder.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quran/to_arabic_no_converter.dart';
+import 'package:quran/utilities/to_arabic_no_converter.dart';
 
 class ArabicSuraNumber extends StatelessWidget {
   const ArabicSuraNumber({Key? key, required this.i}) : super(key: key);
@@ -15,7 +15,7 @@ class ArabicSuraNumber extends StatelessWidget {
         fontSize: 20,
         shadows: [
           Shadow(
-            offset: Offset(.5, .5),
+            offset: Offset(0.5, 0.5),
             blurRadius: 1.0,
             color: Colors.amberAccent,
           ),
